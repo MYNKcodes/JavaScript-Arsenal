@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>    
+</body>
+<script>
+    const week = document.querySelector(".parent");
+    // console.log(week);
+    // console.log(week.children[2].innerText); 
+
+    for (let days = 0; days < week.children.length; days++) {
+        // console.log(week.children[days].innerHTML);        
+    }
+
+
+
+    // styling with scripts
+
+
+    week.children[0].style.color = "blue";
+    // console.log(week.firstElementChild.innerText);
+    // console.log(week.lastElementChild.innerText);
+
+
+    const dayOne = document.querySelector('.day');
+    console.log(dayOne);
+    console.log(dayOne.parentElement);
+    console.log(dayOne.nextElementSibling);
+    console.log(dayOne.previousElementSibling);
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Kya naam hai tumhara??</h1>
+    <button class="start">here</button>;
+    <button class="stop">Stop</button>
+</body>
+<script>
+    const sayName = function() {
+        console.log('shukla hu');
+    }
+
+
+const naam = setInterval(sayName,2000);
+
+const stopping = document.querySelector('.stop').addEventListener('click',function(e){
+    clearInterval(naam);
+    console.log('Stopped');
+    
+})
+
+
+</script>
+</html>
+
+
